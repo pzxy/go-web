@@ -1,0 +1,27 @@
+
+{{template "header"}}<!-- 这里是引用模版 -->
+        <title>首页-我的博客</title>
+    </head>
+    <body>
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                {{template "navbar" .}}
+            </div>
+        </div>
+        <br> <br> <br>
+        <div class="container">
+            <div class="page-header">
+                <h1>我的第一篇博客</h1>
+                <h6 class="text-muted">文章发表于2013年x月x日 xx:xx，共有 100 次浏览，200个评论</h6>
+                <p>
+                    大家好，这是俺的第一篇博客，多谢观看。
+                </p>
+            </div>
+        </div>
+
+        <!-- 静态文件通过www.staticfile.com找到下载路径 -->
+        <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+    </body>
+</html>
+

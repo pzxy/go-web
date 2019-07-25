@@ -1,0 +1,36 @@
+{{template "header"}}<!-- 这里是引用模版 -->
+<title>添加文章-我的博客</title>
+</head>
+<body>
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        {{template "navbar" .}}
+    </div>
+</div>
+<br> <br> <br>
+<div class="container">
+    <h1>添加文章</h1>
+    <form method="post" action="/topic">
+        <div class="from-group">
+            <label>文章标题：</label>
+            <input type="text" name="title" class="form-control">
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="from-group">
+            <label>文章内容：</label>
+            <textarea name="content" cols="30" rows="10" class="form-control"></textarea>
+        </div>
+        <button type="submit"  class="btn btn-default">添加文章</button>
+    </form>
+
+
+</div>
+
+<!-- 静态文件通过www.staticfile.com找到下载路径 -->
+<script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.4.1/jquery.js"></script>
+<script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+</body>
+</html>
+
